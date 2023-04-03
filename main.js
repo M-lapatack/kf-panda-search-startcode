@@ -4,10 +4,15 @@
 document.getElementById("search.btn").addEventListener("click", btnClicked);
 
 function btnClicked() {
+  //  Get Search Input
   let name = document.getElementById("search-in").value;
 
-  if (name === "po") {
-    document.getElementById("char-info").innerHTML = ``;
+  // Test the Search Name
+  if (name === "Po") {
+    document.getElementById("char-info").innerHTML = `
+   <img src="image/po.png" alt="kung fu panda character" />
+   <h2>Po<h2>
+   <p class="quote">"Buddy, I am the Dragon Warrior"</p> `;
   } else {
   }
 }
